@@ -56,7 +56,7 @@ const get_results = async (worker_uuid) => {
 
 const start_worker = async (worker_uuid, worker_options) => {
   try {
-    const response = await fetch(api_domain + '/v1/workers/' + worker_uuid + '/start', {
+    const response = await fetch(api_domain + '/v2/workers/' + worker_uuid + '/start', {
       method: 'POST',
       headers: {
         'Authorization': 'Basic ' + LEADCONE_API_KEY,
